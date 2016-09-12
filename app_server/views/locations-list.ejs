@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta name='viewport', content='width=device-width, initial-scale=1.0') />  <!-- Set viewport metadata for better display on mobile devices-->
+    <link rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css') />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Loc8r</a>
+        </div>
+        <!--  collapsing navigation for smaller screen resolutions-->
+        <button type = "button" class = "navbar-toggle"  data-toggle = "collapse" data-target = "#navbar-collapse">
+           <span class = "sr-only">Toggle navigation</span>
+           <span class = "icon-bar"></span>
+           <span class = "icon-bar"></span>
+           <span class = "icon-bar"></span>
+        </button>
+
+      <div class = "collapse navbar-collapse" id = "navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+      <!-- Page Header
+      that fills entire width, containing a column that limits text width to 6 columns on large screens for readability -->
+      <div id="banner" class="page-header">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Loc8r</h1><small>&nbsp;Find places to work with wifi near you! </small>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Container for list of locations, spanning all 12 columns on extra-small devices and 8 columns on small devices and larger -->
+        <div class="col-xs-12 col-sm-8">
+          <!--<p>List area.</p>-->
+          <div class="row list-group">
+            <!-- Location 1 -->
+            <div class="col-xs-12 list-group-item">
+              <h4><a href="/location"> Starcups </a>
+                <small>&nbsp;
+                <span class="glyphicon glyphicon-star"> </span>
+                <span class="glyphicon glyphicon-star"> </span>
+                <span class="glyphicon glyphicon-star"> </span>
+                <span class="glyphicon glyphicon-star-empty"> </span>
+                <span class="glyphicon glyphicon-star-empty"> </span>
+              </small>
+                <span class="badge pull-right badge-default">100m </span>
+              </h4>
+              <p class="address">125 High Street, Reading, RG6 1PS
+                <p></p>
+              </p>
+              <span class="label label-warning">Hot drinks</span>&nbsp;
+              <span class="label label-warning">Food</span>&nbsp;
+              <span class="label label-warning">Premium wifi</span>&nbsp;
+            </div>
+            <!-- Location 1 -->
+            <div class="col-xs-12 list-group-item">
+              <h4><a href="/location"> Cafe Hero </a>
+                <small>&nbsp;
+                <span class="glyphicon glyphicon-star"> </span>
+                <span class="glyphicon glyphicon-star"> </span>
+                <span class="glyphicon glyphicon-star"> </span>
+                <span class="glyphicon glyphicon-star"> </span>
+                <span class="glyphicon glyphicon-star-empty"> </span>
+              </small>
+                <span class="badge pull-right badge-default">100m </span>
+              </h4>
+              <p class="address">125 High Street, Reading, RG6 1PS
+                <p></p>
+              </p>
+              <span class="label label-warning">Hot drinks</span>&nbsp;
+              <span class="label label-warning">Food</span>&nbsp;
+              <span class="label label-warning">Premium wifi</span>&nbsp;
+            </div>
+            <!-- Location 3 -->
+            <div class="col-xs-12 list-group-item">
+              <h4><a href="/location"> Burguer Queen </a>
+                <small>&nbsp;
+                <span class="glyphicon glyphicon-star"> </span>
+                <span class="glyphicon glyphicon-star"> </span>
+                <span class="glyphicon glyphicon-star-empty"> </span>
+                <span class="glyphicon glyphicon-star-empty"> </span>
+                <span class="glyphicon glyphicon-star-empty"> </span>
+              </small>
+                <span class="badge pull-right badge-default">100m </span>
+              </h4>
+              <p class="address">125 High Street, Reading, RG6 1PS
+                <p></p>
+              </p>
+              <span class="label label-warning">Hot drinks</span>&nbsp;
+              <span class="label label-warning">Food</span>&nbsp;
+              <span class="label label-warning">Premium wifi</span>&nbsp;
+            </div>
+          </div>
+        </div>
+        <!-- Container for secondary or sidebar information, spanning all 12 columns on extra-small devices and 4 columns on small devices and larger-->
+        <div class="col-xs-12 col-sm-4">
+          <p class="lead">Loc8r helps you find places to work when out and about. </p>
+        </div>
+      </div>
+
+      <!-- Footer-->
+      <footer class="footer">
+        <div class="row">
+          <div class="col-xs-12"><small>&copy; Marta Lima 2016</div>
+        </div>
+      </footer>
+    </div>
+
+    <script src='/javascripts/jquery-3.1.0.min'></script>
+    <script src='/bootstrap/js/bootstrap.min.js'></script>
+  </body>
+</html>

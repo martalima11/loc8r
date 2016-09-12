@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title><%= title %></title>
     <meta name='viewport', content='width=device-width, initial-scale=1.0') />  <!-- Set viewport metadata for better display on mobile devices-->
     <link rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css') />
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Loc8r</a>
+        </div>
+        <!--  collapsing navigation for smaller screen resolutions-->
+        <button type = "button" class = "navbar-toggle"  data-toggle = "collapse" data-target = "#navbar-collapse">
+           <span class = "sr-only">Toggle navigation</span>
+           <span class = "icon-bar"></span>
+           <span class = "icon-bar"></span>
+           <span class = "icon-bar"></span>
+        </button>
+
+      <div class = "collapse navbar-collapse" id = "navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/about">About</li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+
+      <!-- Footer-->
+      <footer class="footer">
+        <div class="row">
+          <div class="col-xs-12">  @ Marta 2016</div>
+        </div>
+      </footer>
+    </div>
+
     <script src='/javascripts/jquery-3.1.0.min'></script>
     <script src='/bootstrap/js/bootstrap.min.js'></script>
-
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
   </body>
 </html>
